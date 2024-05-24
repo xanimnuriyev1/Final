@@ -1,0 +1,71 @@
+.Footer {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px 0;
+}
+.Foothead {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Impact, "Arial Narrow Bold";
+}
+.FootText {
+  font-weight: 400;
+  font-size: 16px;
+  color: #737373;
+}
+.FootInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  a {
+    color: #999999;
+  }
+  a:hover {
+    color: white;
+  }
+}
+.FootBox {
+  width: 270px;
+  text-align: center;
+  line-height: 25px;
+}
+.FootIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #999999;
+}
+.SubScribeBtn {
+  padding: 15px 10px;
+  background-color: #fd5f00;
+  border: 1px solid #fd5f00;
+  color: white;
+}
+.SubscribeText {
+  margin-top: 30px;
+}
+.Line {
+  width: 70%;
+  height: 1px;
+  border: 1px solid #737373;
+  margin: auto;
+}
+.FootDown {
+  background-color: #333333;
+}
+.Colorlib {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+.FootEnd {
+  margin-top: 100px;
+}

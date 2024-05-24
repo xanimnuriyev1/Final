@@ -60,22 +60,26 @@ const Add = () => {
                 <br />
                 <button className='DetailBtn'>Submit</button>
             </form>
-            <input type="text" placeholder='Search' onChange={(e) => {
-                let search = box.filter((item) => item.title.toLowerCase().includes(e.target.value.toLowerCase()))
-                setBox(search)
-            }} />
-            <button
-                onClick={() => {
-                    let newarr = [...box].sort((a, b) => a.price - b.price)
-                    setBox(newarr)
-                }}
-            >Sort A-Z</button>
-            <button
-                onClick={() => {
-                    let newarr = [...box].sort((a, b) => b.price - a.price)
-                    setBox(newarr)
-                }}
-            >Sort Z-A</button>
+            <div className='InfoBox'>
+                <input type="text" placeholder='Search' className='Search' onChange={(e) => {
+                    let search = box.filter((item) => item.title.toLowerCase().includes(e.target.value.toLowerCase()))
+                    setBox(search)
+                }} />
+                <button
+                    className='SortBtn'
+                    onClick={() => {
+                        let newarr = [...box].sort((a, b) => a.price - b.price)
+                        setBox(newarr)
+                    }}
+                >Sort A-Z</button>
+                <button
+                    className='SortBtn'
+                    onClick={() => {
+                        let newarr = [...box].sort((a, b) => b.price - a.price)
+                        setBox(newarr)
+                    }}
+                >Sort Z-A</button>
+            </div>
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>

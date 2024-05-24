@@ -14,6 +14,9 @@ import 'swiper/css/scrollbar';
 import HomeFirst from './HomeFirst';
 import HomeMap from './HomeMap';
 import { Helmet } from "react-helmet";
+import HomeLeadership from './HomeLeadership';
+import HomeEnd from './HomeEnd';
+import Footer from '../../layout/Footer';
 const Home = () => {
     return (
         <div>
@@ -44,6 +47,9 @@ const Home = () => {
             </Swiper>
             <HomeFirst />
             <HomeMap />
+            <HomeLeadership />
+            <HomeEnd />
+            <Footer />
         </div>
     )
 }
