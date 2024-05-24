@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   gap: 60px;
-  padding: 100px 0;
+  padding: 100px 200px;
 }
 .Foothead {
   font-weight: 500;
@@ -30,7 +30,7 @@
   }
 }
 .FootBox {
-  width: 270px;
+  width: 100%;
   text-align: center;
   line-height: 25px;
 }
@@ -68,4 +68,14 @@
 }
 .FootEnd {
   margin-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .Footer {
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0;
+  }
+  .Line {
+    display: none;
+  }
 }

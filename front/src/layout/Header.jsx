@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../layout/header.css'
+import { LuMenu } from "react-icons/lu";
 const Header = () => {
     return (
         <header>
@@ -18,6 +19,9 @@ const Header = () => {
                     <li>Contact</li>
                 </ul>
             </nav>
+            <div className='menus'>
+                <p><LuMenu /></p>
+            </div>
         </header>
     )
 }

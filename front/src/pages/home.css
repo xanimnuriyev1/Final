@@ -60,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
   padding: 100px;
 }
@@ -206,4 +207,32 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (max-width: 992px) {
+  .HomeFirst {
+    flex-direction: column;
+  }
+  .BoxBorder {
+    width: 100%;
+  }
+  .Carts {
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px;
+  }
+  .PerSonCarts {
+    flex-direction: column;
+  }
+  .HeroCart {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .HomeFirst {
+    flex-direction: column;
+  }
+  .BoxBorder {
+    width: 90%;
+  }
 }
