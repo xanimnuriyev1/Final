@@ -68,6 +68,13 @@ const Add = () => {
                 <button
                     className='SortBtn'
                     onClick={() => {
+                        let newarr = [...box].sort((a, b) => a.title[0].localeCompare(b.title[0]))
+                        setBox(newarr)
+                    }}
+                >Sort Title</button>
+                <button
+                    className='SortBtn'
+                    onClick={() => {
                         let newarr = [...box].sort((a, b) => a.price - b.price)
                         setBox(newarr)
                     }}
