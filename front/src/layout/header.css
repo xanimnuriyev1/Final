@@ -1,0 +1,29 @@
+.active {
+  color: #fd5f00;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 54321531;
+  .foundation {
+    font-size: 32px;
+    font-weight: 900;
+    color: #fd5f00;
+  }
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+a {
+  color: black;
+}

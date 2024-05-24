@@ -1,0 +1,35 @@
+.BoxGray {
+  background-color: #4e4e4e;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.BoxBorder {
+  border: 2px solid white;
+  padding: 40px;
+  width: 500px;
+  line-height: 25px;
+}
+.Rescue {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.BoxText {
+  color: #a7a79e;
+  margin-top: 10px;
+}
+.orangeBox {
+  background-color: rgb(253, 95, 0);
+}
+.RedBox {
+  background-color: #a23131;
+}
+.HomeFirst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
