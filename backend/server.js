@@ -29,15 +29,20 @@ const productSchema = new Schema({
         type: String,
         require: true,
     },
+    price: {
+        type: Number,
+        require: true,
+    },
 })
 const Product = mongoose.model("Product", productSchema)
 app.post("/products", async (req, res) => {
     try {
-        const { image, title, catagory } = req.body
+        const { image, title, catagory, price } = req.body
         const product = new Product({
             image,
             title,
             catagory,
+            price,
         })
         await product.save()
         res.status(201).send(product)
@@ -74,13 +79,14 @@ app.get("/products/:id", async (req, res) => {
 app.put("/products/:id", async (req, res) => {
     try {
         const { id } = req.params
-        const { image, title, catagory } = req.body
+        const { image, title, catagory, price } = req.body
         const product = await Product.findByIdAndUpdate(
             id,
             {
                 image,
                 title,
                 catagory,
+                price,
             },
             { new: true }
         )

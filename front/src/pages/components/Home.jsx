@@ -12,11 +12,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import HomeFirst from './HomeFirst';
-
+import HomeMap from './HomeMap';
+import { Helmet } from "react-helmet";
 const Home = () => {
     return (
         <div>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -38,6 +43,7 @@ const Home = () => {
                 ...
             </Swiper>
             <HomeFirst />
+            <HomeMap />
         </div>
     )
 }
